@@ -3,12 +3,11 @@ var ctx = canvas.getContext('2d');
 
 var imgPlayer = new Image();
 
-imageObj.onload = function() 
+imgPlayer.onload = function()
 {
-    ctx.drawImage(imageObj, 10, 160);
+    ctx.drawImage(imgPlayer, 10, 160);
 };
-imgPlayer.src = 'pics/player.png';
-
+imgPlayer.src = 'pics/player1.png';
 
 
 function gameTick()
@@ -28,5 +27,6 @@ function drawScreen()
 {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "#FF0000";
-    ctx.fillRect(0,0,canvas.width,75);
+    ctx.fillRect(0, 0, canvas.width, 75);
+    ctx.drawImage(imgPlayer, 10, 160);
 }
