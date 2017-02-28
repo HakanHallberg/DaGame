@@ -1,0 +1,11 @@
+body
+{
+    background-color: black;
+}
+
+canvas
+{
+    background-color: cornflowerblue;
+    width:1024px;
+    height: 550px;
+}
